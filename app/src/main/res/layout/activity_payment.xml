@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.parkinglotmanagement.PaymentActivity">
+
+    <TextView
+        android:id="@+id/payHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Payment Details"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Enter Your Card Number"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:ems="4"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/card1"
+        android:layout_alignBottom="@+id/card1"
+        android:layout_toEndOf="@+id/card1"
+        android:layout_toRightOf="@+id/card1"
+        android:ems="4"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/card3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/card2"
+        android:layout_alignBottom="@+id/card2"
+        android:layout_toEndOf="@+id/card2"
+        android:layout_toRightOf="@+id/card2"
+        android:ems="4"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/card4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/card3"
+        android:layout_alignBottom="@+id/card3"
+        android:layout_toEndOf="@+id/card3"
+        android:layout_toRightOf="@+id/card3"
+        android:ems="4"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card4"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/card3"
+        android:layout_toRightOf="@+id/card3"
+        android:text="CVV"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cvvEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/card3"
+        android:layout_toRightOf="@+id/card3"
+        android:ems="3"
+        android:inputType="numberPassword"
+        android:maxLength="3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toLeftOf="@+id/payHead"
+        android:layout_toStartOf="@+id/payHead"
+        android:text="Expiry"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignTop="@+id/cvvEt" />
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/card2"
+        android:layout_alignRight="@+id/card2"
+        android:layout_alignTop="@+id/yearSpinner" />
+
+    <Button
+        android:id="@+id/payBt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvvEt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="PAY" />
+
+</RelativeLayout>

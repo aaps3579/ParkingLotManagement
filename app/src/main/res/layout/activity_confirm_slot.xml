@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.parkinglotmanagement.ConfirmSlotActivity">
+
+    <TextView
+        android:id="@+id/tvHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Confirm Your Slot"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHeadBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Book For :"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvHeadBook"
+        android:layout_marginTop="12dp" >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/testRb"
+            android:text="2 Min (Test)"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/h1Rb"
+            android:text="1 Hour"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/h2Rb"
+            android:layout_weight="1"
+            android:text="2 Hour"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSlotNoCF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="Your Slot Number - "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPlateCF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSlotNoCF"
+        android:gravity="center"
+        android:text="Your License Plate Number - "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFeesCF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvPlateCF"
+        android:gravity="center"
+        android:text="Payment - NA"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEmailCF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvFeesCF"
+        android:gravity="center"
+        android:text="Your Email - "
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btPayCF"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvHeadBook"
+        android:layout_alignStart="@+id/tvHeadBook"
+        android:layout_below="@+id/btTime"
+        android:layout_marginTop="19dp"
+        android:text="CONFRIM" />
+
+    <Button
+        android:id="@+id/btCancelCF"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btPayCF"
+        android:layout_alignStart="@+id/btPayCF"
+        android:layout_below="@+id/btPayCF"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btTime"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Select Start Time" />
+
+    <TextView
+        android:id="@+id/tvTimeCF"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btTime"
+        android:background="?android:attr/colorButtonNormal"
+        android:gravity="center"
+        android:text="Select  Time -"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSLotMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPlateMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSLotMB"
+        android:layout_alignStart="@+id/tvSLotMB"
+        android:layout_below="@+id/tvSLotMB"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFromMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPlateMB"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvToMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFromMB"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvFeesMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvToMB"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btNavigateMB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFeesMB"
+        android:layout_centerHorizontal="true"
+        android:text="Navigate" />
+</RelativeLayout>
